@@ -203,7 +203,7 @@ const ProductsPage = () => {
 
       {/* ── Hero Slider ─────────────────────────────────────────────────────── */}
       <section  >
-        <ProductSlider/>
+        <ProductSlider />
       </section>
 
       {/* ── Main Products Section ────────────────────────────────────────────── */}
@@ -236,17 +236,18 @@ const ProductsPage = () => {
                 className="min-w-[160px] md:min-w-0 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-5 md:p-6 flex flex-col items-center cursor-pointer group"
               >
 
-                {/* Image */}
-                <div className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                {/* Image Container (Increased from w-20/h-20 to w-28/h-28 on mobile, and w-24/h-24 to w-36/h-36 on desktop) */}
+                <div className="w-28 h-28 md:w-36 md:h-36 mb-4 rounded-full bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <img
                     src={brand.image}
                     alt={brand.name}
-                    className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                    // Image itself (Increased from w-16/h-16 to w-24/h-24 on mobile, and w-20/h-20 to w-32/h-32 on desktop)
+                    className="w-24 h-24 md:w-32 md:h-32 object-contain"
                   />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-base md:text-lg font-bold text-gray-900 text-center">
+                <h3 className="text-base md:text-lg font-bold text-gray-900 text-center mt-2">
                   {brand.name}
                 </h3>
 
@@ -254,7 +255,7 @@ const ProductsPage = () => {
             ))}
 
           </div>
-{/* ── Aggregates & Building Materials ─────────────────────────────── */}
+          {/* ── Aggregates & Building Materials ─────────────────────────────── */}
           <div className="mb-20">
             <SectionHeader
               accent="Aggregates"
@@ -333,8 +334,8 @@ const ProductsPage = () => {
             </div>
           </div>
 
-          
- 
+
+
 
         </div>
       </section>
