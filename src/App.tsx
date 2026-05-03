@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/krisey">
       <div className="font-sans min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
